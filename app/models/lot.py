@@ -23,5 +23,5 @@ class Lot(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     ended_at = Column(DateTime(timezone=True), nullable=True)
     
-    # Relationship to bids
+
     bids = relationship("Bid", back_populates="lot", cascade="all, delete-orphan")

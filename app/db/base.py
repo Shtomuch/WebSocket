@@ -16,7 +16,6 @@ AsyncSessionLocal = async_sessionmaker(
     expire_on_commit=False
 )
 
-# Base class for models
 Base = declarative_base()
 
 # Dependency for getting DB session
